@@ -1,0 +1,213 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+#calendar {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+a:hover .rbc-event-title {
+  text-decoration: underline;
+}
+a:not([href]):hover .rbc-event-title {
+  text-decoration: none;
+}
+.rbc-event {
+  display: block; /* make the <a> tag block */
+  font-size: 0.85em;
+  line-height: 1.3;
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid #3a87ad; /* default BORDER color */
+  background-color: #3a87ad; /* default BACKGROUND color */
+  margin: 1px 2px 0; /* spacing between events and edges */
+  padding: 0 1px;
+  text-align: right;
+}
+.rbc-time {
+  font-weight: bold;
+}
+.rbc-event a {
+  color: #fff;
+}
+.rbc-event a:hover,
+.rbc-event a:focus {
+  color: #fff;
+}
+.rbc-event.hebdate,
+.rbc-event.hebdate .rbc-event-title,
+.rbc-event.omer,
+.rbc-event.omer .rbc-event-title {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #999;
+  text-align: right;
+}
+.rbc-event.dafyomi,
+.rbc-event.dafyomi a,
+.rbc-event.dafyomi .rbc-event-title {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #08c;
+}
+.rbc-event.dafyomi a:hover,
+.rbc-event.dafyomi a:focus {
+  color: #005580;
+}
+.rbc-event.mishnayomi,
+.rbc-event.mishnayomi a,
+.rbc-event.mishnayomi .rbc-event-title {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #257e4a;
+}
+.rbc-event.mishnayomi a:hover,
+.rbc-event.mishnayomi a:focus {
+  color: #15713b;
+}
+
+.rbc-event.holiday,
+.rbc-event.holiday .rbc-event-title,
+.rbc-event.holiday.timed,
+.rbc-event.holiday.timed .rbc-event-title {
+  background-color: #3a87ad;
+  border: 1px solid #3a87ad;
+  color: #fff;
+  text-align: right;
+}
+.rbc-event.fast {
+  background-color: #fd7e14;
+  border: 1px solid #fd7e14;
+  color: #fff;
+}
+.rbc-event.timed,
+.rbc-event.timed .rbc-event-title,
+.rbc-event.holiday.timed.fast,
+.rbc-event.holiday.timed.fast .rbc-event-title {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #333;
+}
+.rbc-event.holiday.yomtov,
+.rbc-event.holiday.yomtov a,
+.rbc-event.holiday.yomtov .rbc-event-title {
+  background-color: #ffd446;
+  border: 1px solid #ffd446;
+  color: #333;
+}
+.rbc-event.parashat,
+.rbc-event.parashat .rbc-event-title {
+  background-color: #257e4a;
+  border: 1px solid #257e4a;
+  color: #fff;
+  text-align: right;
+}
+.rbc-event.roshchodesh {
+  background-color: #6f42c1;
+  border: 1px solid #6f42c1;
+  color: #fff;
+  text-align: right;
+}
+.rbc-event.hebrew .rbc-title {
+  font-family: "SBL Hebrew", David;
+  font-size: 115%;
+  font-weight: normal;
+  direction: rtl;
+  text-align: right;
+}
+.rbc-event.hebrew .rbc-time {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  text-align: right;
+}
+.rbc-event-time,
+.rbc-event-title {
+  padding: 0 1px;
+  white-space: normal;
+}
+.rbc .rbc-event.rbc-event-today .rbc-event-title {
+  background-color: rgba(255, 220, 40, 0.15);
+}
+
+/* //////////////////////////////////// */
+.rbc-event.shiureTora {
+  background-color: #ec1f85;
+  border: 1px solid #ec1f85;
+  color: #fff;
+  text-align: right;
+}
+
+.day {
+  /* font-size: 1.6rem;
+  padding: 7px;
+  background-color: #fff; */
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  transition: all 0.3s;
+  border-bottom: solid 1.5px #24aeff;
+  border-right: solid 1.5px #24aeff;
+}
+
+.day:hover {
+  background: #24aeff;
+  color: white;
+}
+
+.day-btn {
+  padding: 0.8rem 1.5rem;
+}
+
+.past .add_event {
+  display: none;
+}
+
+.add_event {
+  font-size: 1.2rem;
+  background-color: rgba(231, 231, 231, 0.322);
+  border-radius: 10rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: min-content;
+  height: min-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  color: rgba(0, 0, 0, 0.596);
+  line-height: 0.7;
+  transition: all 0.4s;
+}
+
+.add_event:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: rgb(231, 231, 231);
+}
+
+@media only print {
+  .add_event {
+    display: none;
+  }
+}
+
+/* /////////////////////////////////// */
+.rbc-direction-rtl {
+  direction: rtl;
+  text-align: right;
+}
+.rbc-toolbar-label {
+  font-size: x-large;
+}
+.rbc-agenda-event-cell {
+  text-align: right;
+}
+.rbc-agenda-empty {
+  text-align: center;
+}
+.rbc-overlay-header {
+  text-align: center;
+}
+/* /////////////////////////////////// */

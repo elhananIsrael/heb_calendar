@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+
+.custom-date-header {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  direction: ltr;
+}
+
+.dh-item {
+  /* flex: 1 1 0; */
+  flex: content;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.myIcon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+}

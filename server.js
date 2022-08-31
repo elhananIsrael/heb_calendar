@@ -3,13 +3,6 @@ const app = express();
 const fs = require("fs");
 require("dotenv").config();
 
-function isEmpty(obj) {
-  for (var x in obj) {
-    return false;
-  }
-  return true;
-}
-
 //Serve static files from the React app
 app.use(express.static("client/build"));
 

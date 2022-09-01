@@ -26,6 +26,12 @@ function App() {
       <HebCalendarRBC lessonEvents={toraLessonsArr} />
       <br />
       <HebCalendarFC lessonEvents={toraLessonsArr} />
+      <a
+        href="https://www.flaticon.com/free-icons/judaism"
+        title="Judaism icons"
+      >
+        Judaism icons created by Freepik - Flaticon
+      </a>
     </div>
   );
 }

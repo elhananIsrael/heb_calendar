@@ -1,9 +1,9 @@
 {
-  "short_name": "SHIURE TORA HALUTZA",
-  "name": "SHIURE TORA HALUTZA APP",
+  "short_name": "HEB CALENDARS",
+  "name": "HEBREW CALENDARS APP",
   "icons": [
     {
-      "src": "MLH_icon.ico",
+      "src": "heCalendarIco.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "MLH_logo512.png",
+      "src": "hebCalendarLogo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
